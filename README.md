@@ -52,13 +52,8 @@ This project utilizes an ESP8266 microcontroller to create a WiFi deauthenticati
 
 - **Attack Detection**: When the number of deauth packets exceeds a defined threshold, the device indicates an attack, increments the attack counter, and updates the display accordingly.
 
-## Customization
+## Thanks
 
-- **Adjustable Parameters**: You can modify the `CH_TIME`, `PKT_RATE`, and `PKT_TIME` constants to customize the sensitivity and responsiveness of the detection.
-- **Channel Range**: Modify the `channels[]` array to include more channels as needed, based on your region's WiFi regulations.
+Special thanks to ❤ **[Spacehuhn](https://github.com/SpacehuhnTech)** for making this project possible!
 
-## Notes
-
-- Ensure you are authorized to monitor the networks in your vicinity.
-- This project is intended for educational purposes and should be used responsibly.
 
