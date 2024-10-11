@@ -21,7 +21,7 @@ This project utilizes an ESP8266 microcontroller to create a WiFi deauthenticati
 
 | Component       | ESP8266 Pin |
 |------------------|-------------|
-| LED              | D2          |
+| LED              | 2           |
 | Buzzer           | 13          |
 | OLED VCC         | 3.3V        |
 | OLED GND         | GND         |
@@ -62,6 +62,3 @@ This project utilizes an ESP8266 microcontroller to create a WiFi deauthenticati
 - Ensure you are authorized to monitor the networks in your vicinity.
 - This project is intended for educational purposes and should be used responsibly.
 
-## License
-
-This project is licensed under the MIT License. Feel free to modify and distribute as needed.
