@@ -35,23 +35,6 @@ This project utilizes an ESP8266 microcontroller to create a WiFi deauthenticati
 - **Adafruit SSD1306 Library**: Library for interfacing with the SSD1306 OLED display.
 - **ESP8266WiFi Library**: For WiFi functionalities.
 
-## Installation
-
-1. Clone the repository or download the code.
-2. Open the Arduino IDE and load the provided code.
-3. Install the required libraries via the Library Manager.
-4. Connect your ESP8266 to your computer.
-5. Select the correct board and port in the Arduino IDE.
-6. Upload the code to your ESP8266.
-
-## Code Explanation
-
-- **Setup**: Initializes serial communication, pins, and the OLED display. It sets the device to station mode and enables promiscuous mode for packet sniffing.
-  
-- **Loop**: Continuously checks for deauth packets. If detected, it updates the display, triggers the buzzer, and maintains channel hopping for effective scanning.
-
-- **Attack Detection**: When the number of deauth packets exceeds a defined threshold, the device indicates an attack, increments the attack counter, and updates the display accordingly.
-
 ## Thanks
 
 Special thanks to ❤ **[Spacehuhn](https://github.com/SpacehuhnTech)** for making this project possible!
