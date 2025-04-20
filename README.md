@@ -1,39 +1,61 @@
-# WiFi Deauthentication Detector
+# 📡 WiFi Jamming Detector
 
-This project utilizes an ESP8266 microcontroller to create a WiFi deauthentication packet detector. It scans specific WiFi channels for deauth packets, indicating potential attacks on nearby networks. When an attack is detected, it activates an LED and a buzzer while displaying relevant information on an OLED screen.
+This project uses an **ESP8266** microcontroller to detect WiFi deauthentication (and disassociation) packets — often signs of an attempted WiFi attack. When an attack is detected, the system activates a **buzzer**, **LED**, and displays information on an **OLED screen**.
 
-## Features
+---
 
-- **Channel Scanning**: Monitors specified WiFi channels for deauthentication and disassociation frames.
-- **Attack Detection**: Activates when a minimum number of deauth packets are detected within a specified time frame.
-- **OLED Display**: Provides visual feedback of the device status and the number of detected attacks.
-- **Audible Alerts**: Uses a buzzer to indicate an attack has been detected.
+## ✨ Features
 
-## Hardware Requirements
+- **📶 Channel Scanning**: Monitors specific WiFi channels for deauth and disassoc frames.
+- **🚨 Attack Detection**: Triggers alerts when a threshold of deauth packets is met.
+- **📺 OLED Display**: Shows detection status and packet count.
+- **🔊 Audible Alerts**: Buzzer beeps when an attack is detected.
+- **💡 LED Indicator**: LED lights up during attack.
 
-- **ESP8266**: Microcontroller with WiFi capability.
-- **OLED Display**: 128x64 pixel display compatible with the Adafruit SSD1306 library.
-- **Buzzer**: For audio alerts.
-- **LED**: Indicator for attack detection.
-- **Connecting Wires**: For wiring components.
+---
 
-## Wiring
+## 🧰 Hardware Requirements
+
+| Component    | Description                        |
+|--------------|------------------------------------|
+| ESP8266      | NodeMCU / Wemos D1 Mini            |
+| OLED Display | 128x64 I2C OLED (SSD1306)          |
+| Buzzer       | Passive/active buzzer              |
+| LED          | Any color                          |
+| Resistor     | 220Ω for LED (optional)            |
+| Wires        | Male-to-male jumper wires          |
+| Breadboard   | Optional for prototyping           |
+| TP4056       | Optional for Charging Board        |
+| 18650 Battery| Optional for PowerSupply           |
+
+---
+
+## 🔌 Wiring Diagram
+
+📷 **Wiring Diagram**  
+![Wiring Diagram](image/image_1.png)
+
 
 | Component       | ESP8266 Pin |
 |------------------|-------------|
-| LED              | 2           |
-| Buzzer           | 13          |
-| OLED VCC         | 3.3V        |
-| OLED GND         | GND         |
-| OLED SDA         | D2          |
-| OLED SCL         | D1          |
+| **LED**          | LED_BUILTIN |
+| **Buzzer**       | D7 (GPIO13) |
+| **OLED VCC**     | 3.3V        |
+| **OLED GND**     | GND         |
+| **OLED SDA**     | D2 (GPIO4)  |
+| **OLED SCL**     | D1 (GPIO5)  |
 
-## Software Requirements
+---
 
-- **Arduino IDE**: To upload the code to the ESP8266.
-- **Adafruit GFX Library**: Core graphics library for the OLED display.
-- **Adafruit SSD1306 Library**: Library for interfacing with the SSD1306 OLED display.
-- **ESP8266WiFi Library**: For WiFi functionalities.
+## 💻 Software Requirements
+
+Install the following libraries using Arduino IDE Library Manager or from the links below:
+
+- 📦 [Adafruit GFX Library](https://github.com/adafruit/Adafruit-GFX-Library)  
+- 📦 [Adafruit SSD1306 Library](https://github.com/adafruit/Adafruit_SSD1306)  
+- 📦 [ESP8266WiFi Library](https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WiFi)
+
+---
 
 ## Thanks
 
