@@ -16,6 +16,12 @@ This project uses an **ESP8266** microcontroller to detect WiFi deauthentication
 
 ---
 
+## Disclaimer
+
+This project is intended **strictly for educational, defensive, and research purposes** — to help users detect possible Wi‑Fi deauthentication/disassociation attacks and learn about wireless security. Do **not** use this code or hardware to perform attacks, interfere with other networks, or violate laws or terms of service. The author and contributors accept no responsibility or liability for any misuse, damages, loss of data, or legal consequences resulting from the use or modification of this project.
+
+---
+
 ## 🧰 Hardware Requirements
 
 | Component    | Description                        |
