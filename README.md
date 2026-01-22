@@ -1,18 +1,18 @@
-# 📡 WiFi Jamming Detector
+# WiFi Jamming Detector
 
 This project uses an **ESP8266** microcontroller to detect WiFi deauthentication (and disassociation) packets — often signs of an attempted WiFi attack. When an attack is detected, the system activates a **buzzer**, **LED**, and displays information on an **OLED screen**.
 
-[🔗 **Live Demo**: Click here to view live demo](https://vt.tiktok.com/ZSrsUYohJ/)
+[ **Live Demo**: Click here to view live demo](https://vt.tiktok.com/ZSrsUYohJ/)
 
 ---
 
-## ✨ Features
+## Features
 
-- **📶 Channel Scanning**: Monitors specific WiFi channels for deauth and disassoc frames.
-- **🚨 Attack Detection**: Triggers alerts when a threshold of deauth packets is met.
-- **📺 OLED Display**: Shows detection status and packet count.
-- **🔊 Audible Alerts**: Buzzer beeps when an attack is detected.
-- **💡 LED Indicator**: LED lights up during attack.
+-  ** Channel Scanning**: Monitors specific WiFi channels for deauth and disassoc frames.
+-  ** Attack Detection**: Triggers alerts when a threshold of deauth packets is met.
+-  ** OLED Display**: Shows detection status and packet count.
+-  ** Audible Alerts**: Buzzer beeps when an attack is detected.
+-  ** LED Indicator**: LED lights up during attack.
 
 ---
 
@@ -22,7 +22,7 @@ This project is intended **strictly for educational, defensive, and research pur
 
 ---
 
-## 🧰 Hardware Requirements
+## Hardware Requirements
 
 | Component    | Description                        |
 |--------------|------------------------------------|
@@ -38,9 +38,9 @@ This project is intended **strictly for educational, defensive, and research pur
 
 ---
 
-## 🔌 Wiring Diagram
+## Wiring Diagram
 
-📷 **Wiring Diagram**  
+**Wiring Diagram**  
 ![Wiring Diagram](image/image_1.png)
 
 
@@ -55,13 +55,13 @@ This project is intended **strictly for educational, defensive, and research pur
 
 ---
 
-## 💻 Software Requirements
+## Software Requirements
 
 Install the following libraries using Arduino IDE Library Manager or from the links below:
 
-- 📦 [Adafruit GFX Library](https://github.com/adafruit/Adafruit-GFX-Library)  
-- 📦 [Adafruit SSD1306 Library](https://github.com/adafruit/Adafruit_SSD1306)  
-- 📦 [ESP8266WiFi Library](https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WiFi)
+-  [Adafruit GFX Library](https://github.com/adafruit/Adafruit-GFX-Library)  
+-  [Adafruit SSD1306 Library](https://github.com/adafruit/Adafruit_SSD1306)  
+-  [ESP8266WiFi Library](https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WiFi)
 
 ---
 
